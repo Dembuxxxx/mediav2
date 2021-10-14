@@ -8,9 +8,8 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<button type="button" class="btn btn-warning float-start">Accueil</button>
-<button type="button" class="btn btn-warning float-end">Connexion</button>
-
+<button type="button" class="btn btn-warning float-start" onclick="window.location.href = '{{url('homepage')}}';"> Accueil </button>
+<button type="button" class="btn btn-warning float-end" onclick="window.location.href = '{{url('loginprofilandemploye')}}';"> Connexion </button>
 <div class="example-wrapper">
     <h1>Login</h1>
 </div>
@@ -24,6 +23,8 @@
                     <input name="email" type="text" placeholder="email">
                     <input type="password" placeholder="password">
                     <button class="btn btn-success btn-block login" type="submit">Se connecter</button>
+                    <br></br>
+                    <button class="btn btn-default">mot de passe oublié</button>
                 </form>
             </div>
         </div>
