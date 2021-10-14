@@ -1,15 +1,73 @@
 @import "˜bootstrap/css/bootstrap";
+@import url('https://fonts.googleapis.com/css2? family = Advent + Pro & family = Dancing + Script: wght @ 500 & display = swap');
+
+
+
 body {
 
-    background-color:cornflowerblue;
+    
+    width: auto;
+    height: auto;
 
 }
 
 
 h1 {
 
-text-align: center;
-color: darkgreen;
+text-align:center;
+color:green;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 100;
+font-style: italic;
+
 
 }
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+
+} 
+
+
+
+p {
+    font-family: 'dancing Script', cursive;
+    text-align: center;
+    text-transform:lowercase;
+    padding-top: 30px;
+    font-size: 1.5em;
+    font-style: italic;
+    color:rgb(0, 0, 0);
+}
+
+.form-row {
+    font-family: 'dancing Script', cursive;
+    display: block;
+    color:black;
+    left: 50%;
+    top: 50%;
+    font-weight: bolder;
+   
+  
+}
+
+ img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+    background-size: 150px;
+    width: 400px;
+   height: 400px;
+   text-align: center; 
+   display: block;
+    margin-left: auto;
+    margin-right: auto
+
+    
+    
+ }   
+
+
 
