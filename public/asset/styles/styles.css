@@ -35,7 +35,7 @@ h2 {
 
 
 p {
-    font-family;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     text-transform:lowercase;
     padding-top: 30px;
@@ -45,9 +45,9 @@ p {
 }
 
 .form-row {
-    font-family: 'dancing Script', cursive;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: block;
-    color:black;
+    color:grey;
     left: 50%;
     top: 50%;
     font-weight: bolder;
@@ -227,3 +227,5 @@ html,body{
             width:60% !important;
         }
     }
+
+    
