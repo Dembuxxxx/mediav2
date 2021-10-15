@@ -8,13 +8,74 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<button type="button" class="btn btn-warning float-start" onclick="window.location.href = '{{url('adminemployepage1')}}';"> Adminemploye </button>
+<button type="button" class="btn btn-warning float-end" onclick="window.location.href = '{{url('loginprofilandemploye')}}';"> Deconnexion </button>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/paris/Documents/ECF-Media-2021/symfony-media/src/Controller/ReturnbookpageController.php'|file_link(0) }}">src/Controller/ReturnbookpageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/paris/Documents/ECF-Media-2021/symfony-media/templates/returnbookpage/index.html.twig'|file_link(0) }}">templates/returnbookpage/index.html.twig</a></code></li>
-    </ul>
+
+<div class="example-wrapper">
+    <h1>Retour d'un livre</h1>
 </div>
+
+
+<br></br>
+       <br></br>
+ <div class="example-wrapper">
+    <h1>dans la blibliothéque</h1>
+
+    <br></br>
+       <br></br>
+
+    <div class="row mb-3">
+  <label for="colFormLabel" class="col-sm-2 col-form-label">Titre</label>
+  <div class="col-sm-10">
+    <input type="title" class="form-control" id="colFormLabel" placeholder="">
+  </div>
+</div>
+<br></br>
+ <div class="row mb-3">
+  <label for="" class="col-sm-2 col-form-label">Date de parution</label>
+  <div class="col-sm-10">
+    <input type="dateofparution" class="form-control" id="" placeholder="">
+  </div>
+</div>
+<br></br>
+<div class="row mb-3">
+  <label for="" class="col-sm-2 col-form-label">Description</label>
+  <div class="col-sm-10">
+    <input type="descritption" class="form-control" id="" placeholder="">
+  </div>
+</div>
+<br></br>
+<div class="row mb-3">
+  <label for="" class="col-sm-2 col-form-label">Auteur</label>
+  <div class="col-sm-10">
+    <input type="Author" class="form-control" id="" placeholder="">
+  </div>
+</div>
+<br></br>
+<div class="row mb-3">
+  <label for="" class="col-sm-2 col-form-label">genre</label>
+  <div class="col-sm-10">
+    <input type="genre" class="form-control" id="" placeholder="">
+  </div>
+</div>
+<br></br>
+<div class="row mb-3">
+  <label for="" class="col-sm-2 col-form-label">Date de la restitution</label>
+  <div class="col-sm-10">
+    <input type="date of loan" class="form-control" id="" placeholder="">
+  </div>
+</div>
+
+<br></br>
+<br></br>
+<div class="col text-center">
+ <button type="button" class="btn btn-success">Prêt d'un livre</button>
+ </div>
+
+
+<br></br>
+<br></br>
+
+
 {% endblock %}
