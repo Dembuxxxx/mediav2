@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProfilpageController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<button type="button" class="btn btn-warning float-start" onclick="window.location.href = '{{url('librarypage')}}';"> Bibliothéque </button>
+<button type="button" class="btn btn-warning float-end" onclick="window.location.href = '{{url('loginprofilandemploye')}}';"> Deconnexion </button>
+
+<div class="example-wrapper">
+    <h1>Profil page</h1>
+</div>
+
+<br></br>
+<br></br>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Tous</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Emprunter</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Réserver</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+  <label class="form-check-label" for="inlineCheckbox3">Rendre</label>
+</div>
+
+<br></br>
+<br></br>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    <img src="{{asset('asset/img/couverture1.jpg')}}" alt="Nature" style="width:100%" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Genre: fantastique</h5>
+        <p class="card-text">Retour de la momie</p>
+        <p class="card-text"><small class="text-muted">Auteur: Marc Landers</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br></br>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{asset('asset/img/couverture3.jpg')}}" alt="Nature" style="width:100%" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Genre: policier</h5>
+        <p class="card-text">L'horizon dormante</p>
+        <p class="card-text"><small class="text-muted">Auteur: Ben Wilson</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<br></br>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    <img src="{{asset('asset/img/couverture5.jpg')}}" alt="Nature" style="width:100%" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Genre: Thriller</h5>
+        <p class="card-text">Inception</p>
+        <p class="card-text"><small class="text-muted">Auteur: Thomas Durant</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br></br>
+<br></br>
+<div class="col text-center">
+ <button type="button" class="btn btn-success">Ajouter un livre</button>
+ </div>
+
+
+{% endblock %}
