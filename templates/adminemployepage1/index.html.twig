@@ -8,13 +8,70 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<button type="button" class="btn btn-warning float-end" onclick="window.location.href = '{{url('loginprofilandemploye')}}';"> Deconnexion </button>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/paris/Documents/ECF-Media-2021/symfony-media/src/Controller/Adminemployepage1Controller.php'|file_link(0) }}">src/Controller/Adminemployepage1Controller.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/paris/Documents/ECF-Media-2021/symfony-media/templates/adminemployepage1/index.html.twig'|file_link(0) }}">templates/adminemployepage1/index.html.twig</a></code></li>
-    </ul>
+<div class="example-wrapper">
+    <h1>Employe page </h1>
+
+    <h3>Livres réservés</h3>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{asset('asset/img/couverture1.jpg')}}" alt="Nature" style="width:100%">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-genre">fantastique</h5>
+        <p class="card-text">Titre: Le retour de la momie</p>
+        <p class="card-text"><small class="text-muted">Auteur: John Portas</small></p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+    <img src="{{asset('asset/img/couverture11.jpg')}}" alt="Nature" style="width:100%">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-genre">thriller</h5>
+        <p class="card-text"> Titre: Le nouveau monde.</p>
+        <p class="card-text"><small class="text-muted">Auteur: Marc Landers</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br></br>
+
+<h3>Emprunts en cours</h3>
+
+<br></br>
+
+<h3>filtres</h3>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+  <label class="form-check-label" for="inlineCheckbox1">Tous</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+  <label class="form-check-label" for="inlineCheckbox2">Délai dépassé</label>
+</div>
+
+<br></br>
+
+<h3>Compte utilisateurs a valider</h3>
+
+<div>
+<ul>
+<li>Utilisateurs 19259</li>
+<li>Utilisateurs 19260</li>
+<li>Utilisateurs 19261</li>
+</ul>
+</div>
+    
 {% endblock %}
