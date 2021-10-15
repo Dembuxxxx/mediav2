@@ -8,13 +8,142 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<button type="button" class="btn btn-warning float-end" onclick="window.location.href = '{{url('loginprofilandemploye')}}';"> Deconnexion </button>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/paris/Documents/ECF-Media-2021/symfony-media/src/Controller/LibrarypageController.php'|file_link(0) }}">src/Controller/LibrarypageController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/paris/Documents/ECF-Media-2021/symfony-media/templates/librarypage/index.html.twig'|file_link(0) }}">templates/librarypage/index.html.twig</a></code></li>
-    </ul>
+<div class="example-wrapper">
+    <h1>Bibliothéque</h1>
+
+ <div class="container mt-3">
+    <input class="form-control" id="myInput" type="text" placeholder="recherche.."  
+ </div>
+
+ <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/lights.jpg">
+       <img src="{{asset('asset/img/couverture1.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Retour de la momie</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="{{asset('asset/img/couverture2.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Les dents de la mer</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/fjords.jpg">
+        <img src="{{asset('asset/img/couverture3.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Il était une fois dans le Oued</p>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/lights.jpg">
+        <img src="{{asset('asset/img/couverture4.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Chasse et pêche dans les Ardennes</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="{{asset('asset/img/couverture5.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Inception</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/fjords.jpg">
+        <img src="{{asset('asset/img/couverture6.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Le gôut du risque</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/lights.jpg">
+        <img src="{{asset('asset/img/couverture7.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Le seigneur de l'anneau</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="{{asset('asset/img/couverture8.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Police Miami vice</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/fjords.jpg">
+        <img src="{{asset('asset/img/couverture9.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Lorem ipsum...</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/lights.jpg">
+        <img src="{{asset('asset/img/couverture10.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Le temps gourmand</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/nature.jpg">
+        <img src="{{asset('asset/img/couverture11.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Nouveau monde</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/w3images/fjords.jpg">
+        <img src="{{asset('asset/img/couverture12.jpg')}}" alt="Nature" style="width:100%">
+        <div class="caption">
+          <p>Agatha Cristy et ces aventures</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
