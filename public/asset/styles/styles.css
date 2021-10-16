@@ -28,9 +28,29 @@ h2 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     text-align: center;
+    
 
 
 } 
+
+h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    color:grey;
+    left: 50%;
+    top: 50%;
+    font-weight: bolder;
+   
+
+}
+
+li {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: 50%;
+    top: 50%;
+    font-weight: bolder;
+
+}
 
 
 
@@ -40,8 +60,11 @@ p {
     text-transform:lowercase;
     padding-top: 30px;
     font-size: 1.5em;
-    font-style: italic;
-    color:rgb(0, 0, 0);
+    display: block;
+    color:grey;
+    left: 50%;
+    top: 50%;
+    font-weight: bolder;
 }
 
 .form-row {
@@ -228,4 +251,17 @@ p {
         }
     }
 
-    
+   .row  {
+
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: block;
+    color:grey;
+    left: 50%;
+    top: 50%;
+    font-weight: bolder;
+   
+
+
+   } 
+
+   
