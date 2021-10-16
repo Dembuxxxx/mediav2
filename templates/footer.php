@@ -1,42 +1,71 @@
-<footer  class="container-fluid  footer-bg py-2">
+<footer class="text-center text-white" style="background-color: #f1f1f1;">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
 
-<div class="row justify-content-center">
-    <img class="logoFooter" src="assets/img/logoFooter.svg">
-</div>
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
 
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
 
-<nav>
-<div class="row">
-   <ul class="d-flex flex-column align-items-center flex-lg-row justify-content-around list-unstyled mt-3 ">
-      <li class="mx-lg-4">
-        <a class="nav-link  fw-light" href="#">Contact</a></li>
-      <li class="mx-lg-4 " >
-        <a class="nav-link  fw-light" href="#">C.G.V</a></li>
-      <li class="mx-lg-4 " >
-        <a class="nav-link  fw-light" href="#">Mention légale</a></li>
-      <li class="mx-lg-4 " >
-        <a class="nav-link  fw-light" href="bankeraccess.php">Accès interne</a></li>
-    </ul>
-</div>
-</nav>
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
 
-<div id="socialMedia" class="row">
-  <ul class="d-flex flex-row justify-content-center list-unstyled mt-3">
-    <li class="mx-lg-2">
-      <a class="nav-link fw-light"  href="#"><img  src="assets/img/Facebook.svg"></a></li>
-    <li class="mx-lg-2" >
-      <a class="nav-link fw-light" href="#"><img  src="assets/img/Instagram.svg"></a></li>
-    <li class="mx-lg-2" >
-      <a class="nav-link fw-light" href="#"><img src="assets/img/TwitterFooter.svg"></a></li>
-  </ul>
-</div>
-<div class="row d-flex justify-content-center text-center">
-    <hr class="text-white">
-    <p class=" text-white">tout droit réservé &copy; Team Hold'up</p>
-</div>
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-dark m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
 
-
-
+  <!-- Copyright -->
+  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
 </footer>
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
