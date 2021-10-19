@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription{% endblock %}
+
+{% block body %}
+    <h1>Inscription</h1>
+
+    {{ form_start(form, {'action': path('app_register'), 'method': 'POST'}) }}
+
+    {{ form_rest(form) }}
+    <input type="submit" value="s'inscrire">
+
+    {{ form_end(form) }}
+{% endblock %}

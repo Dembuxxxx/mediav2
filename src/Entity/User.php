@@ -6,11 +6,12 @@ use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  */
-class User
+class User implements UserInterface
 {
     /**
      * @ORM\Id
@@ -38,6 +39,13 @@ class User
      * @ORM\Column(type="string", length=255)
      */
     private $password;
+
+    /**
+     * @ORM\Column(name="salt", type="string", length=255, nullable=true)
+     */
+    protected $salt;
+    
+    private $plainPassword;
 
     /**
      * @ORM\Column(type="datetime")
@@ -213,6 +221,72 @@ class User
                 $emprunt->setCreatedBy(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getUsername(): ?string
+    {
+        return $this->username;
+    }
+
+    public function setUsername(string $username): self
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    /**
+      * @see UserInterface
+      */
+    public function eraseCredentials()
+    {
+         // If you store any temporary, sensitive data on the user, clear it here
+         // $this->plainPassword = null;
+    }
+
+    function getUserIdentifier()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+
+    /**
+     * @param string $plainPassword
+     *
+     * @return self
+     */
+    public function setPlainPassword($plainPassword)
+    {
+        $this->plainPassword = $plainPassword;
+
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSalt()
+    {
+        return $this->salt;
+    }
+
+    /**
+     * @param mixed $salt
+     *
+     * @return self
+     */
+    public function setSalt($salt)
+    {
+        $this->salt = $salt;
 
         return $this;
     }
