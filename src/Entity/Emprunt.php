@@ -23,8 +23,14 @@ class Emprunt
      */
     private $createdBy;
 
+     /**
+     * @ORM\ManyToOne(targetEntity=Book::class, inversedBy="emprunts")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $book;
+
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="emprunts")
+     * @ORM\ManyToOne(targetEntity=User::class)
      * @ORM\JoinColumn(nullable=false)
      */
     private $validatedBy;
@@ -105,6 +111,18 @@ class Emprunt
     public function setUpdatedAt(\DateTimeInterface $updatedAt): self
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    public function getBook(): ?Book
+    {
+        return $this->book;
+    }
+
+    public function setBook(?Book $book): self
+    {
+        $this->book = $book;
 
         return $this;
     }
