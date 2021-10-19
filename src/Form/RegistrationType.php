@@ -17,7 +17,7 @@ class RegistrationType extends AbstractType
         $builder
             ->add('name', null , ['label' => 'Prénom'])
             ->add('lastName', null, ['label' => 'Nom'])
-            ->add('email')
+            ->add('email', null, ['label' => 'Email'])
             ->add('plainPassword', RepeatedType::class, [
                 'mapped' => false,
                 'label' => 'Mot de passe',
