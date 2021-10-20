@@ -15,7 +15,7 @@ class BookType extends AbstractType
         $builder
             ->add('title',  null , ['label' => 'Titre'])
             //->add('picture')
-            ->add('datePublished', null , ['label' => 'datePublished'])
+            ->add('datedepublication', null , ['label' => 'datedepublication'])
             ->add('description', null , ['label' => 'description'])
             ->add('author', null , ['label' => 'author'])
             ->add('genre', null , ['label' => 'genre'])

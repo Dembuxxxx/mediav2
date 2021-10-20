@@ -20,8 +20,9 @@ font-style: italic;
 
 h2 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    text-align: center;
+    color:black;
+    text-align: right;
+    
 } 
 
 h3 {
@@ -249,11 +250,6 @@ p {
 
    } 
 
-    .logo {
-     text-align: center;
-     color: grey;
-
-
-   }
-
+   
+   
    
