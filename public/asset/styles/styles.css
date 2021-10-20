@@ -4,24 +4,17 @@
 
 
 body {
-
-    
     width: auto;
     height: auto;
-
 }
 
 
 h1 {
-
 text-align:center;
 color:#7afe3b;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-weight: 100;
 font-style: italic;
-font-family:;
-
-
 
 }
 
@@ -29,9 +22,6 @@ h2 {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
     text-align: center;
-    
-
-
 } 
 
 h3 {
@@ -41,8 +31,6 @@ h3 {
     left: 50%;
     top: 50%;
     font-weight: bolder;
-   
-
 }
 
 li {
@@ -50,7 +38,6 @@ li {
     left: 50%;
     top: 50%;
     font-weight: bolder;
-
 }
 
 
@@ -89,10 +76,7 @@ p {
     text-align: center; 
     display: block;
     margin-left: auto;
-    margin-right: auto
-
-    
-    
+    margin-right: auto;  
  }   
 
 
@@ -265,8 +249,9 @@ p {
 
    } 
 
-   nav {
-   text-align: center;
+    .logo {
+     text-align: center;
+     color: grey;
 
 
    }
