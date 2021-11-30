@@ -40,8 +40,8 @@ class UserRepository extends ServiceEntityRepository
     public function findOneByLogin($value): ?User
     {
         return $this->createQueryBuilder('u')
-            ->andWhere('u.exampleField = :val')
-            ->setParameter('val', $value)
+            ->andWhere('u.exampleField = :val') //les (:) (:val  empêche les injections SQL// 
+            ->setParameter('val', $value) //les (:) (:val  empêche les injections SQL// 
             ->getQuery()
             ->getOneOrNullResult()
         ;

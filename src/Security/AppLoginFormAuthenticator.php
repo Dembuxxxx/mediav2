@@ -91,7 +91,7 @@ class AppLoginFormAuthenticator extends AbstractFormLoginAuthenticator implement
         }
 
         return $user;
-    }
+    } 
 
     /**
      * {@inheritdoc}
