@@ -16,3 +16,4 @@ public function testTestsareWorking () {
 //création de la classe et etendre test//
 // création d'une methode function pour savoir si le test fonctionne bien//
 // mettre la methode qui sont appellé insertion et expectation//
+//on peut le faire avec d'autre class comme kernetTestCase, la webTestCase //
